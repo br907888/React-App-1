@@ -48,7 +48,6 @@ export default function Sidebar({ initialMenuItems = [] }) {
       <button
         onClick={addMenuItem}
       /* TODO: 3 */
-
       >
         Add Item
       </button>
