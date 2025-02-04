@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react"
+import React from 'react';
 /**
  * Renders an array of strings passed in that can be filtered and added to as an
  * unordered list.
@@ -23,7 +24,6 @@ export default function Sidebar() {
     //   // This involves adding a parameter and changing a class instance variable (props).
     //   setMenuItems([item, ...menuItems])
   }, [])
-  import React from 'react';
   function MenuNew({children}){
     const [menuItems, setItems] = useState([]);
     const addMenuItem = (item) => {
@@ -44,8 +44,6 @@ export default function Sidebar() {
   export default MenuNew;
   // TODO: 4. Display ONLY the menu items that contain the filter element value
   // "term" in them. Each menu item should be an unordered list item wrapped in an unordered list (ul) element.
- import React, { useState } from 'react';
-
 function FilterableMenu({ menuItems }) {
   const [filterText, setFilterText] = useState('');
 
